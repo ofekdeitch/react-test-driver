@@ -20,6 +20,15 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Run tests
+          command: "npm run test"
   build:
     <<: *defaults
     steps:
@@ -50,9 +59,13 @@ workflows:
   ci-cd:
     jobs:
       - install
+      - test:
+          requires:
+            - install
       - build:
           requires:
             - install
       - release:
           requires:
             - build
+            - test
