@@ -1,0 +1,32 @@
+{
+  "name": "react-test-driver",
+  "version": "0.0.1-",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofekdeitch/react-test-driver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofekdeitch/react-test-driver/issues"
+  },
+  "homepage": "https://github.com/ofekdeitch/react-test-driver#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
