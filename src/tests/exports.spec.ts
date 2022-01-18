@@ -1,4 +1,4 @@
-import * as entry from ".";
+import * as entry from "..";
 
 describe("react-test-driver", () => {
     describe("TestDriver", () => {

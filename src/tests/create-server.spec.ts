@@ -1,5 +1,5 @@
 import axios from "axios";
-import { TestDriver } from "../";
+import { TestDriver } from "..";
 import { RouteDefinition } from "../glossary";
 
 const responseData = { greeting: "Hello!" };
